@@ -1,5 +1,9 @@
-@if (isLoggedIn) {
-    <p>Bienvenido, {{ username }}</p>
-} @else {
-    <p class="text-center">logea pe</p>
-}
+<div class="container">
+
+    <button class="button " (click)="isLoggedIn = !isLoggedIn;">click</button>
+    @if (isLoggedIn) {
+        <p class="text-center">Bienvenido, {{ username }}</p>
+    } @else {
+        <p class="text-center">logea pe</p>
+    }
+</div>
